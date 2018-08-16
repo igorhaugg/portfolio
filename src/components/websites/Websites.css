@@ -1,0 +1,104 @@
+.websites {
+  /* background-color: #f4f4f4; */
+  background-image: url('./images/lined-paper.png');
+  min-height: calc(100vh - var(--header-size));
+  min-width: 100vw;
+}
+
+.websites__group {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+}
+
+.websites__item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 0;
+  width: 95%;
+}
+
+@media (min-width: 950px) {
+  .websites__item {
+    flex-direction: row;
+    width: 80%;
+  }
+}
+
+.websites__images {
+  align-items: center;
+  display: flex;
+  flex-basis: 95%;
+  justify-content: center;
+}
+
+@media (min-width: 950px) {
+  .websites__images {
+    flex-basis: 50%;
+  }
+}
+
+.websites__img {
+  height: auto;
+  transition: transform 0.5s linear;
+  width: 50%;
+}
+
+@media (min-width: 950px) {
+  .websites__img {
+    width: 70%;
+  }
+}
+
+.websites__img:hover {
+  transform: scale(1.2, 1.3);
+  /* transform: scaleY(1.1); */
+}
+
+.websites__img--mobile {
+  width: 20%;
+}
+
+@media (min-width: 950px) {
+  .websites__img--mobile {
+    width: 30%;
+  }
+}
+
+.websites__description {
+  display: flex;
+  flex-basis: 95%;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 950px) {
+  .websites__description {
+    flex-basis: 50%;
+  }
+}
+
+.websites__description p {
+  padding: 1rem 0;
+}
+
+.websites__button {
+  border: 2px solid #000;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 1rem;
+  padding: 1.1rem 0;
+  text-align: center;
+  transition: background-color 0.5s linear, color 0.5s linear;
+  width: 10rem;
+}
+
+.websites__button:hover {
+  background-color: #000;
+  color: #f4f4f4;
+}

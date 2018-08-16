@@ -1,0 +1,13 @@
+.icon {
+  height: 2.5rem;
+  padding: 0 0.5rem;
+  transition: transform 0.5s cubic-bezier(0.6, -0.505, 0.51, 1.65);
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.icon img {
+  height: inherit;
+}

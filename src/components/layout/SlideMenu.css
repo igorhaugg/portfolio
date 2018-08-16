@@ -1,0 +1,91 @@
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  /* // position: fixed; */
+  width: 40px;
+  height: 30px;
+  left: 36px;
+  top: 22px;
+  display: block;
+}
+
+@media (min-width: 770px) {
+  .bm-burger-button {
+    display: none;
+  }
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: rgba(255, 255, 255, 0.9);
+  opacity: 1 !important;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #f0f0f0;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: rgba(120, 120, 120, 1);
+  padding: 2.5rem 1.5rem 0;
+  font-size: 2rem;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  height: calc(100% - 4rem) !important;
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.sidebar__item {
+  border-radius: 5px;
+  color: inherit;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: 0.5rem;
+  padding: 1.5rem 0 1.5rem 2rem;
+  text-transform: uppercase;
+  transition: background 0.15s ease-in-out;
+  width: 85%;
+}
+
+.sidebar__item:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.sidebar__item li {
+  display: flex;
+}
+
+.sidebar__active {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.sidebar__icons {
+  align-items: center;
+  border: 1px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.2);
+  display: flex !important;
+  justify-content: center;
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+}
