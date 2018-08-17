@@ -9,7 +9,7 @@ const Projects = () => {
     <Layout>
       <main className="projects">
         <section className="projects__group">
-          <h3>teste</h3>
+          <h3>Developing...</h3>
         </section>
       </main>
     </Layout>

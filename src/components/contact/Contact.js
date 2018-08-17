@@ -7,7 +7,11 @@ import './Contact.css';
 const Contact = () => {
   return (
     <Layout>
-      <section className="contact" />
+      <main className="contact">
+        <section className="contact__group">
+          <h3>Developing...</h3>
+        </section>
+      </main>
     </Layout>
   );
 };

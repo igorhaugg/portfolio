@@ -3,6 +3,11 @@
   background-image: url('./images/lined-paper.png');
   min-height: calc(100vh - var(--header-size));
   min-width: 100vw;
+  padding-bottom: 5rem;
+}
+
+.websites__title {
+  font-size: 3rem;
 }
 
 .websites__group {
@@ -54,7 +59,7 @@
 }
 
 .websites__img:hover {
-  transform: scale(1.2, 1.3);
+  transform: scale(1.05, 1.1);
   /* transform: scaleY(1.1); */
 }
 
