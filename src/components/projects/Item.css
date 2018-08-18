@@ -46,7 +46,7 @@
   opacity: 0;
   padding: 1rem 0;
   position: absolute;
-  transition: opacity 0.1s linear, transform 0.5s linear;
+  transition: opacity 0.1ms ease, transform 0.5s 0.2s linear;
   transform: scale(0) translateX(20rem);
   width: 100%;
   z-index: 2;
