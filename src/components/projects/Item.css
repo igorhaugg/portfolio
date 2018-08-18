@@ -47,14 +47,24 @@
   padding: 1rem 0;
   position: absolute;
   transition: opacity 0.1ms ease, transform 0.5s 0.2s linear;
-  transform: scale(0) translateX(20rem);
+  /* transform: scale(0) translateX(20rem); */
   width: 100%;
   z-index: 2;
 }
 
 .item:hover .item__description {
+  animation: 0.5s linear showUp;
   opacity: 1;
-  transform: scale(1) translateX(0rem);
+  /* transform: scale(1) translateX(0rem); */
+}
+
+@keyframes showUp {
+  from {
+    transform: scale(0) translateX(20rem);
+  }
+  to {
+    transform: scale(1) translateX(0rem);
+  }
 }
 
 .item__info {
