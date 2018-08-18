@@ -47,13 +47,13 @@
   position: absolute;
   transition: transform 0.5s 0.2s linear;
   transform: scale(0) translateX(20rem);
-  z-index: 2;
   width: 100%;
 }
 
 .item:hover .item__description {
   /* .item__description { */
   transform: scale(1) translateX(0rem);
+  z-index: 2;
 }
 
 .item__info {
@@ -89,7 +89,9 @@
 .item__button {
   border: 1px solid black;
   border-radius: 5px;
+  overflow: hidden;
   padding: 0.3rem 0;
+  position: relative;
   text-align: center;
   width: 10rem;
 }
@@ -97,5 +99,32 @@
 @media (min-width: 1000px) {
   .item__button {
     padding: 0.5rem 0;
+  }
+}
+
+.item__button::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  background: linear-gradient(
+    to bottom,
+    rgba(229, 172, 142, 0),
+    rgba(120, 120, 120, 0.5) 50%,
+    rgba(229, 172, 142, 0)
+  );
+  transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+
+.item__button:hover::after,
+.item__button:focus::after {
+  animation: sheen 1s forwards;
+}
+
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -9em);
   }
 }
