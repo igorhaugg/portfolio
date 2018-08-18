@@ -43,17 +43,18 @@
   flex-direction: column;
   min-height: 100%;
   justify-content: space-evenly;
+  opacity: 0;
   padding: 1rem 0;
   position: absolute;
-  transition: transform 0.5s 0.2s linear;
+  transition: opacity 0.1s 0.2s linear, transform 0.5s 0.2s linear;
   transform: scale(0) translateX(20rem);
   width: 100%;
+  z-index: 2;
 }
 
 .item:hover .item__description {
-  /* .item__description { */
+  opacity: 1;
   transform: scale(1) translateX(0rem);
-  z-index: 2;
 }
 
 .item__info {
