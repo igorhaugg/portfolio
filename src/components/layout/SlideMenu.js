@@ -14,36 +14,28 @@ const SlideMenu = () => {
         activeClassName="sidebar__active"
         className="sidebar__item"
       >
-        <li>
-          <span>Home</span>
-        </li>
+        <span>Home</span>
       </NavLink>
       <NavLink
         to="/websites"
         activeClassName="sidebar__active"
         className="sidebar__item"
       >
-        <li>
-          <span>Websites</span>
-        </li>
+        <span>Websites</span>
       </NavLink>
       <NavLink
         to="/projects"
         activeClassName="sidebar__active"
         className="sidebar__item"
       >
-        <li>
-          <span>Projects</span>
-        </li>
+        <span>Projects</span>
       </NavLink>
       <NavLink
         to="/contact"
         activeClassName="sidebar__active"
         className="sidebar__item"
       >
-        <li>
-          <span>Contact</span>
-        </li>
+        <span>Contact</span>
       </NavLink>
       <div className="sidebar__icons">
         <Icons />
