@@ -12,14 +12,8 @@
 }
 
 .home__text {
-  animation: typing 8s steps(16, end),
-    blink-cursor 0.5s step-end infinite alternate;
-  border-right: 0.1em solid white;
   color: white;
   font-size: 3rem;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 16ch;
 }
 
 @media (min-width: 400px) {
@@ -29,9 +23,10 @@
 }
 
 .home__description {
-  animation: 8s linear hiding;
+  animation: 1s 1s linear hiding forwards;
   color: white;
   font-size: 2rem;
+  opacity: 0;
   text-align: center;
 }
 
@@ -41,54 +36,21 @@
   }
 }
 
-@keyframes hiding {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-
-@keyframes blink-cursor {
-  50% {
-    border-color: transparent;
-  }
-}
-
 .main__image {
-  animation: 8s linear show-image;
+  animation: 1s 2s linear hiding forwards;
   border-radius: 50%;
   height: 25rem;
   margin-top: 2rem;
+  opacity: 0;
   width: 25rem;
 }
 
-@keyframes show-image {
-  0% {
+@keyframes hiding {
+  from {
     opacity: 0;
-    transform: translateY(10rem);
   }
-  75% {
-    opacity: 0;
-    transform: translateY(5rem);
-  }
-  90% {
-    opacity: 0.5;
-    transform: translateY(2rem);
-  }
-  100% {
+  to {
     opacity: 1;
-    transform: translateY(0rem);
   }
 }
 
