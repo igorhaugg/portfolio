@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 
 import Item from './Item';
 import Layout from '../layout/Layout';
@@ -10,6 +11,9 @@ import ConverterImage from './images/converter.jpg';
 import BitcoinImage from './images/bitcoin.jpg';
 import SplittingImage from './images/splitting.jpg';
 import './Projects.css';
+
+ReactGA.initialize('UA-124943031-1');
+ReactGA.pageview(window.location.pathname);
 
 const admin = [
   'javascript',

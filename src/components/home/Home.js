@@ -1,10 +1,14 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import Particles from 'react-particles-js';
 import SplitText from 'react-pose-text';
 
 import Layout from '../layout/Layout';
 import ProfileImage from './images/igor.jpg';
 import './Home.css';
+
+ReactGA.initialize('UA-124943031-1');
+ReactGA.pageview(window.location.pathname);
 
 const particlesOptions = {
   particles: {

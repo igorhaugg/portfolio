@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 
 import Cards from '../layout/Cards';
 import Layout from '../layout/Layout';
@@ -7,8 +8,10 @@ import TiagoImage from './images/tiago.png';
 import TiagoImageMob from './images/tiagomob.png';
 import Delicada from './images/delicada.png';
 import DelicadaMob from './images/delicadamob.png';
-
 import './Websites.css';
+
+ReactGA.initialize('UA-124943031-1');
+ReactGA.pageview(window.location.pathname);
 
 const tiago = [
   'Javascript',
