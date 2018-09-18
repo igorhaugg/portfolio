@@ -1,6 +1,6 @@
 .projects {
-  /* background-color: #f0f0f0; */
-  background-image: url('./images/lined-paper.png');
+  background-color: #fff6f6;
+  /* background-image: url('./images/lined-paper.png'); */
   min-height: calc(100vh - var(--header-size));
   min-width: 100vw;
 }
@@ -8,7 +8,6 @@
 .projects__group {
   align-items: center;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
   padding-top: 5rem;
 }

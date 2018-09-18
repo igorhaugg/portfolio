@@ -16,7 +16,7 @@ body {
 
 :root {
   --header-size: 8rem;
-
+  --text-color-gray: #727272;
   /* color: var(--main-color); */
 }
 

@@ -1,35 +1,22 @@
 .item {
-  align-items: center;
   display: flex;
   flex-direction: column;
   margin-bottom: 3rem;
-  position: relative;
-  width: 85%;
+  justify-content: space-between;
+  width: 80%;
 }
 
-@media (min-width: 860px) {
+@media (min-width: 900px) {
   .item {
+    flex-direction: row;
     margin-bottom: 4rem;
-    width: 35%;
   }
 }
 
 .item__title {
-  font-size: 1.6rem;
+  color: var(--text-color-gray);
+  font-size: 4rem;
   padding-bottom: 1rem;
-  text-align: center;
-}
-
-@media (min-width: 450px) {
-  .item__title {
-    font-size: 3rem;
-  }
-}
-
-@media (min-width: 860px) {
-  .item__title {
-    font-size: 2rem;
-  }
 }
 
 .item__image {
@@ -37,78 +24,72 @@
   width: 100%;
 }
 
+@media (min-width: 900px) {
+  .item__image {
+    width: 40vw;
+  }
+}
+
 .item__description {
-  background-color: #c4c4c4;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
-  justify-content: space-evenly;
-  opacity: 0;
-  padding: 1rem 0;
-  position: absolute;
-  /* ver */
-  /* transition: opacity 0.1ms ease, transform 0.5s 0.2s linear; */
-  width: 100%;
-  z-index: 2;
+  padding-bottom: 5rem;
+  padding-right: 0;
 }
 
-.item:hover .item__description {
-  animation: 0.5s linear showUp;
-  opacity: 1;
-}
-
-@keyframes showUp {
-  from {
-    transform: scale(0) translateX(20rem);
-  }
-  to {
-    transform: scale(1) translateX(0rem);
+@media (min-width: 900px) {
+  .item__description {
+    min-height: 80vh;
+    padding-bottom: 0;
+    padding-right: 5rem;
   }
 }
 
 .item__info {
-  font-size: 1.3rem;
-  padding: 0 1rem;
+  color: var(--text-color-gray);
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 450px) {
   .item__info {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 }
 
-@media (min-width: 860px) {
+@media (min-width: 1100px) {
   .item__info {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
 }
 
 .item__cards {
-  border: 1px solid transparent;
-  border-bottom-color: rgba(0, 0, 0, 0.8);
-  border-top-color: rgba(0, 0, 0, 0.8);
-  margin-bottom: 1rem;
-  padding: 0.5rem 0;
+  margin-bottom: 2rem;
 }
 
 .item__buttons {
   display: flex;
-  justify-content: space-evenly;
+}
+
+.item__button:first-child {
+  margin-right: 5rem;
 }
 
 .item__button {
-  border: 1px solid black;
+  border: 1px solid var(--text-color-gray);
   border-radius: 5px;
+  color: var(--text-color-gray);
+  font-size: 2rem;
   overflow: hidden;
   padding: 0.3rem 0;
   position: relative;
   text-align: center;
-  width: 10rem;
+  width: 15rem;
 }
 
 @media (min-width: 1000px) {
   .item__button {
-    padding: 0.5rem 0;
+    padding: 1.2rem 0;
   }
 }
 
