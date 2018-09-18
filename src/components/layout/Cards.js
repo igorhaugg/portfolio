@@ -2,11 +2,11 @@ import React from 'react';
 
 import './Cards.css';
 
-const Cards = ({ items }) => (
+const Cards = ({ items, cardClass }) => (
   <p className="cards">
     {items
       .map(item => (
-        <span className="card" key={item}>
+        <span className={cardClass ? `card ${cardClass}` : 'card'} key={item}>
           {item}{' '}
         </span>
       ))

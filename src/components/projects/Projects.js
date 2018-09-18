@@ -6,10 +6,11 @@ import Layout from '../layout/Layout';
 
 import AdminImage from './images/admin.jpg';
 import AuthenticationImage from './images/authentication.jpg';
-import GradientImage from './images/gradient.jpg';
+import GradientImage from './images/gradient.png';
 import ConverterImage from './images/converter.jpg';
 import BitcoinImage from './images/bitcoin.jpg';
 import SplittingImage from './images/splitting.jpg';
+import JokesImage from './images/jokes.png';
 import './Projects.css';
 
 ReactGA.initialize('UA-124943031-1');
@@ -20,8 +21,6 @@ const admin = [
   'css',
   'react',
   'redux',
-  'react-router',
-  'react-loadable',
   'axios',
   'mongoDB',
   'express',
@@ -34,8 +33,6 @@ const authentication = [
   'css',
   'react',
   'redux',
-  'react-router',
-  'react-loadable',
   'axios',
   'mongoDB',
   'express',
@@ -60,12 +57,14 @@ const converter = [
   'gh-pages'
 ];
 
-const splitting = [
+const splitting = ['javascript', 'css', 'react', 'react-loadable', 'gh-pages'];
+
+const jokes = [
   'javascript',
   'css',
   'react',
-  'react-router',
-  'react-loadable',
+  'react-flip-move',
+  'axios',
   'gh-pages'
 ];
 
@@ -93,6 +92,14 @@ const Projects = () => {
             itemsCard={authentication}
             websiteLink="https://authentication-ih.herokuapp.com/"
             githubLink="https://github.com/igorhaugg/authentication"
+          />
+          <Item
+            title="Jokes API"
+            image={JokesImage}
+            info="Simple project that fetch data from an API and show the jokes on a table with search and ordenation options."
+            itemsCard={jokes}
+            websiteLink="https://igorhaugg.github.io/jokes-api/"
+            githubLink="https://github.com/igorhaugg/jokes-api"
           />
           <Item
             title="Background Gradient Generator"

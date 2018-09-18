@@ -7,8 +7,6 @@ import './Item.css';
 const Item = ({ title, image, info, itemsCard, websiteLink, githubLink }) => {
   return (
     <div className="item">
-      <h2 className="item__title">{title}</h2>
-      <img src={image} alt={title} className="item__image" />
       <div className="item__description">
         <h2 className="item__title">{title}</h2>
         <div>
@@ -16,7 +14,7 @@ const Item = ({ title, image, info, itemsCard, websiteLink, githubLink }) => {
           <p className="item__info">The technologies used was:</p>
         </div>
         <div className="item__cards">
-          <Cards items={itemsCard} />
+          <Cards items={itemsCard} cardClass="card--projects" />
         </div>
         <div className="item__buttons">
           <a
@@ -33,9 +31,12 @@ const Item = ({ title, image, info, itemsCard, websiteLink, githubLink }) => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            Code
+            Source Code
           </a>
         </div>
+      </div>
+      <div>
+        <img src={image} alt={title} className="item__image" />
       </div>
     </div>
   );
