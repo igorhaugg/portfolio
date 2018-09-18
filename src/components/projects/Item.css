@@ -9,7 +9,7 @@
 @media (min-width: 900px) {
   .item {
     flex-direction: row;
-    margin-bottom: 4rem;
+    margin-bottom: 10rem;
   }
 }
 
