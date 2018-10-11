@@ -11,6 +11,7 @@ import ConverterImage from './images/converter.jpg';
 import BitcoinImage from './images/bitcoin.jpg';
 import SplittingImage from './images/splitting.jpg';
 import JokesImage from './images/jokes.png';
+import ExcelImage from './images/excel-example.png';
 import './Projects.css';
 
 ReactGA.initialize('UA-124943031-1');
@@ -68,6 +69,16 @@ const jokes = [
   'gh-pages'
 ];
 
+const excel = [
+  'javascript',
+  'css',
+  'react',
+  'react-dropzone',
+  'material-ui',
+  'xlsx',
+  'gh-pages'
+];
+
 const bitcoin = ['javascript', 'css', 'react', 'axios', 'gh-pages'];
 
 const Projects = () => {
@@ -100,6 +111,14 @@ const Projects = () => {
             itemsCard={jokes}
             websiteLink="https://igorhaugg.github.io/jokes-api/"
             githubLink="https://github.com/igorhaugg/jokes-api"
+          />
+          <Item
+            title="Excel file reader"
+            image={ExcelImage}
+            info="Example of excel file reader using react-dropzone, material-ui and xlsx libraries."
+            itemsCard={excel}
+            websiteLink="https://igorhaugg.github.io/excel-example/"
+            githubLink="https://github.com/igorhaugg/excel-example"
           />
           <Item
             title="Background Gradient Generator"
