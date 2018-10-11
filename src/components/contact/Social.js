@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-import CloseImg from '../layout/images/close.png';
-import OpenImg from '../layout/images/open.png';
-import FacebookLogo from '../layout/images/facebook-small.png';
-import GithubLogo from '../layout/images/github.png';
-import CodepenLogo from '../layout/images/codepen.png';
-import TwitterLogo from '../layout/images/twitter-small.png';
-import LinkedinLogo from '../layout/images/linkedin-small.png';
-import ContactLogo from '../layout/images/contact.png';
+import CloseImg from '../../common/_images/close.png';
+import OpenImg from '../../common/_images/open.png';
+import FacebookLogo from '../../common/_images/facebook-small.png';
+import GithubLogo from '../../common/_images/github.png';
+import CodepenLogo from '../../common/_images/codepen.png';
+import TwitterLogo from '../../common/_images/twitter-small.png';
+import LinkedinLogo from '../../common/_images/linkedin-small.png';
+import ContactLogo from '../../common/_images/contact.png';
 
 import './Social.css';
 
