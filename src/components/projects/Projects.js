@@ -1,91 +1,38 @@
 import React from 'react';
 import ReactGA from 'react-ga';
+import { css } from 'emotion';
+
+import {
+  admin,
+  authentication,
+  gradient,
+  converter,
+  splitting,
+  jokes,
+  excel,
+  bitcoin
+} from '../../util/technologies';
 
 import Item from './Item';
 import Layout from '../layout/Layout';
 
-import AdminImage from './images/admin.jpg';
-import AuthenticationImage from './images/authentication.jpg';
-import GradientImage from './images/gradient.png';
-import ConverterImage from './images/converter.jpg';
-import BitcoinImage from './images/bitcoin.jpg';
-import SplittingImage from './images/splitting.jpg';
-import JokesImage from './images/jokes.png';
-import ExcelImage from './images/excel-example.png';
-import './Projects.css';
+import AdminImage from '../_images/admin.jpg';
+import AuthenticationImage from '../_images/authentication.jpg';
+import GradientImage from '../_images/gradient.png';
+import ConverterImage from '../_images/converter.jpg';
+import BitcoinImage from '../_images/bitcoin.jpg';
+import SplittingImage from '../_images/splitting.jpg';
+import JokesImage from '../_images/jokes.png';
+import ExcelImage from '../_images/excel-example.png';
 
 ReactGA.initialize('UA-124943031-1');
 ReactGA.pageview(window.location.pathname);
 
-const admin = [
-  'javascript',
-  'css',
-  'react',
-  'redux',
-  'axios',
-  'mongoDB',
-  'express',
-  'aws S3',
-  'heroku'
-];
-
-const authentication = [
-  'javascript',
-  'css',
-  'react',
-  'redux',
-  'axios',
-  'mongoDB',
-  'express',
-  'heroku'
-];
-
-const gradient = [
-  'javascript',
-  'css',
-  'react',
-  'react-color',
-  'react-copy-to-clipboard',
-  'gh-pages'
-];
-
-const converter = [
-  'javascript',
-  'css',
-  'react',
-  'axios',
-  'react-copy-to-clipboard',
-  'gh-pages'
-];
-
-const splitting = ['javascript', 'css', 'react', 'react-loadable', 'gh-pages'];
-
-const jokes = [
-  'javascript',
-  'css',
-  'react',
-  'react-flip-move',
-  'axios',
-  'gh-pages'
-];
-
-const excel = [
-  'javascript',
-  'css',
-  'react',
-  'react-dropzone',
-  'material-ui',
-  'xlsx',
-  'gh-pages'
-];
-
-const bitcoin = ['javascript', 'css', 'react', 'axios', 'gh-pages'];
-
 const Projects = () => {
   return (
     <Layout>
-      <main className="projects">
-        <section className="projects__group">
+      <main className={projects}>
+        <section className={projects__group}>
           <Item
             title="Admin Template"
             image={AdminImage}
@@ -157,5 +104,18 @@ const Projects = () => {
     </Layout>
   );
 };
+
+const projects = css`
+  background-color: #fff6f6;
+  min-height: calc(100vh - var(--header-size));
+  min-width: 100vw;
+`;
+
+const projects__group = css`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+`;
 
 export default Projects;

@@ -1,112 +1,53 @@
 import React from 'react';
 import ReactGA from 'react-ga';
+import { css } from 'emotion';
 
-import Cards from '../layout/Cards';
+import { tiago, delicada } from '../../util/technologies';
+
+import Item from './Item';
 import Layout from '../layout/Layout';
 
-import TiagoImage from './images/tiago.png';
-import TiagoImageMob from './images/tiagomob.png';
-import Delicada from './images/delicada.png';
-import DelicadaMob from './images/delicadamob.png';
-import './Websites.css';
+import TiagoImage from '../_images/tiago.png';
+import TiagoImageMob from '../_images/tiagomob.png';
+import DelicadaImage from '../_images/delicada.png';
+import DelicadaImageMob from '../_images/delicadamob.png';
+import BackgroundImageLined from '../_images/lined-paper.png';
 
 ReactGA.initialize('UA-124943031-1');
 ReactGA.pageview(window.location.pathname);
 
-const tiago = [
-  'Javascript',
-  'Css',
-  'Sass',
-  'React',
-  'Redux',
-  'Webpack',
-  'Firebase'
-];
-
-const delicada = [
-  'Javascript',
-  'Css',
-  'Sass',
-  'React',
-  'Redux',
-  'Webpack',
-  'Firebase'
-];
-
 const Websites = () => {
   return (
     <Layout>
-      <main className="websites">
-        <section className="websites__group">
-          <h2 className="websites__title">Tiago Pimentel</h2>
-          <div className="websites__item">
-            <div className="websites__images">
-              <img
-                className="websites__img"
-                alt="Tiago Website"
-                src={TiagoImage}
-              />
-              <img
-                className="websites__img websites__img--mobile"
-                alt="Tiago Website Mobile"
-                src={TiagoImageMob}
-              />
-            </div>
-            <div className="websites__description">
-              <p>
-                Website developed to show the work of the coach Tiago Pimentel.
-                He teaches martial arts such as Muai thay/ Boxing and Brazilian
-                Jiu-Jitsu.
-              </p>
-              <p>This work was developed using the follow technologies:</p>
-              <Cards items={tiago} />
-
-              <a
-                rel="noopener noreferrer"
-                className="websites__button"
-                href="https://tiago-pimentel.firebaseapp.com"
-                target="_blank"
-              >
-                Visit
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section className="websites__group">
-          <h2 className="websites__title">Delicada Mulher</h2>
-          <div className="websites__item">
-            <div className="websites__images">
-              <img
-                className="websites__img"
-                alt="Delicada Mulher Website"
-                src={Delicada}
-              />
-              <img
-                className="websites__img websites__img--mobile"
-                alt="Delicada Mulher Website Mobile"
-                src={DelicadaMob}
-              />
-            </div>
-            <div className="websites__description">
-              <p>Website developed to expose the shops vestuary.</p>
-              <p>This work was developed using the follow technologies:</p>
-              <Cards items={delicada} />
-
-              <a
-                rel="noopener noreferrer"
-                className="websites__button"
-                href="https://delicada-mulher.firebaseapp.com/"
-                target="_blank"
-              >
-                Visit
-              </a>
-            </div>
-          </div>
-        </section>
+      <main className={websites}>
+        <Item
+          title="Tiago Pimentel"
+          image={TiagoImage}
+          imageMob={TiagoImageMob}
+          info="Website developed to show the work of the coach Tiago Pimentel.
+          He teaches martial arts such as Muai thay/ Boxing and Brazilian
+          Jiu-Jitsu."
+          itemsCard={tiago}
+          visitLink="https://tiago-pimentel.firebaseapp.com"
+        />
+        <Item
+          title="Delicada Mulher"
+          image={DelicadaImage}
+          imageMob={DelicadaImageMob}
+          info="Website developed to expose the shops vestuary."
+          itemsCard={delicada}
+          visitLink="https://delicada-mulher.firebaseapp.com"
+        />
       </main>
     </Layout>
   );
 };
+
+const websites = css`
+  background-image: url(${BackgroundImageLined});
+  min-height: calc(100vh - var(--header-size));
+  min-width: 100vw;
+  padding-bottom: 5rem;
+`;
 
 export default Websites;
