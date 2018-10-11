@@ -5,7 +5,7 @@ import SplitText from 'react-pose-text';
 import { css } from 'emotion';
 import { keyframes } from 'react-emotion';
 
-import Layout from '../layout/Layout';
+import Layout from '../../common/Layout';
 import ProfileImage from '../_images/igor.jpg';
 
 ReactGA.initialize('UA-124943031-1');

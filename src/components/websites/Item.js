@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from 'emotion';
 
-import Cards from '../layout/Cards';
+import Cards from '../../common/Cards';
 
 const Item = ({ title, image, imageMob, info, itemsCard, visitLink }) => {
   return (

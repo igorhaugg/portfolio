@@ -2,7 +2,7 @@ import React from 'react';
 import ReactGA from 'react-ga';
 import { css } from 'emotion';
 
-import Layout from '../layout/Layout';
+import Layout from '../../common/Layout';
 import Social from './Social';
 
 import BackgroundImageLined from '../_images/lined-paper.png';

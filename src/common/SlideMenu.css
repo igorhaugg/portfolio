@@ -55,37 +55,3 @@
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
-
-.sidebar__item {
-  border-radius: 5px;
-  color: inherit;
-  font-size: 1.7rem;
-  font-weight: 600;
-  margin: 0.5rem;
-  padding: 1.5rem 0 1.5rem 2rem;
-  text-transform: uppercase;
-  transition: background 0.15s ease-in-out;
-  width: 85%;
-}
-
-.sidebar__item:hover {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.sidebar__item li {
-  display: flex;
-}
-
-.sidebar__active {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.sidebar__icons {
-  align-items: center;
-  border: 1px solid transparent;
-  border-top-color: rgba(0, 0, 0, 0.2);
-  display: flex !important;
-  justify-content: center;
-  margin-top: 1rem;
-  padding-top: 1.5rem;
-}

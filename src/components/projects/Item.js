@@ -2,7 +2,7 @@ import React from 'react';
 import { css } from 'emotion';
 import { keyframes } from 'react-emotion';
 
-import Cards from '../layout/Cards';
+import Cards from '../../common/Cards';
 
 const Item = ({ title, image, info, itemsCard, websiteLink, githubLink }) => {
   return (

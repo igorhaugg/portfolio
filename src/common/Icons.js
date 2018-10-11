@@ -1,19 +1,18 @@
 import React, { Fragment } from 'react';
+import { css } from 'emotion';
 
-import FacebookLogo from './images/facebook.png';
-import InstagramLogo from './images/instagram.png';
-import TwitterLogo from './images/twitter.png';
-import CodepenLogo from './images/codepen.png';
-import GithubLogo from './images/github.png';
-import LinkedinLogo from './images/linkedin.png';
-
-import './Icons.css';
+import FacebookLogo from './_images/facebook.png';
+import InstagramLogo from './_images/instagram.png';
+import TwitterLogo from './_images/twitter.png';
+import CodepenLogo from './_images/codepen.png';
+import GithubLogo from './_images/github.png';
+import LinkedinLogo from './_images/linkedin.png';
 
 const Icons = () => (
   <Fragment>
     <a
       href="https://www.facebook.com/igor.haugg"
-      className="icon"
+      className={icon}
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -21,7 +20,7 @@ const Icons = () => (
     </a>
     <a
       href="https://www.instagram.com/igorhaugg/"
-      className="icon"
+      className={icon}
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -29,7 +28,7 @@ const Icons = () => (
     </a>
     <a
       href="https://twitter.com/igorhaugg"
-      className="icon"
+      className={icon}
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -37,7 +36,7 @@ const Icons = () => (
     </a>
     <a
       href="https://codepen.io/igorhaugg/"
-      className="icon"
+      className={icon}
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -45,7 +44,7 @@ const Icons = () => (
     </a>
     <a
       href="https://github.com/igorhaugg"
-      className="icon"
+      className={icon}
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -53,7 +52,7 @@ const Icons = () => (
     </a>
     <a
       href="https://www.linkedin.com/in/igor-haugg-109b9292/"
-      className="icon"
+      className={icon}
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -61,5 +60,17 @@ const Icons = () => (
     </a>
   </Fragment>
 );
+
+const icon = css`
+  height: 2.5rem;
+  padding: 0 0.5rem;
+  transition: transform 0.5s cubic-bezier(0.6, -0.505, 0.51, 1.65);
+  > img {
+    height: inherit;
+  }
+  &:hover {
+    transform: scale(1.2);
+  }
+`;
 
 export default Icons;

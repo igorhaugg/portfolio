@@ -14,7 +14,7 @@ import {
 } from '../../util/technologies';
 
 import Item from './Item';
-import Layout from '../layout/Layout';
+import Layout from '../../common/Layout';
 
 import AdminImage from '../_images/admin.jpg';
 import AuthenticationImage from '../_images/authentication.jpg';

@@ -5,7 +5,7 @@ import { css } from 'emotion';
 import { tiago, delicada } from '../../util/technologies';
 
 import Item from './Item';
-import Layout from '../layout/Layout';
+import Layout from '../../common/Layout';
 
 import TiagoImage from '../_images/tiago.png';
 import TiagoImageMob from '../_images/tiagomob.png';
