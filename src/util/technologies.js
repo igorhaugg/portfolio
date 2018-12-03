@@ -1,11 +1,15 @@
 export const tiago = [
   'Javascript',
   'Css',
-  'Sass',
   'React',
   'Redux',
-  'Webpack',
-  'Firebase'
+  'Node',
+  'Express',
+  'Mongo',
+  'Axios',
+  'JWT',
+  'AWS S3',
+  'Heroku'
 ];
 
 export const delicada = [

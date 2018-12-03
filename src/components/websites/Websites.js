@@ -28,7 +28,7 @@ const Websites = () => {
           He teaches martial arts such as Muai thay/ Boxing and Brazilian
           Jiu-Jitsu."
           itemsCard={tiago}
-          visitLink="https://tiago-pimentel.firebaseapp.com"
+          visitLink="https://tiagopimentel.herokuapp.com"
         />
         <Item
           title="Delicada Mulher"
