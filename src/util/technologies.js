@@ -22,6 +22,17 @@ export const delicada = [
   'Firebase'
 ];
 
+export const speedbox = ['Javascript', 'Css', 'React', 'Redux', 'Material-UI'];
+
+export const navid = [
+  'Javascript',
+  'Css',
+  'React',
+  'Node',
+  'Nodemailer',
+  'Express'
+];
+
 export const admin = [
   'javascript',
   'css',
